@@ -1,15 +1,22 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-const bio = 'Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet enim quis augue sodales, porta fringilla leo mollis. Duis ornare ac elit non feugiat. Ut id mattis mi, id efficitur nisl.';
-
 const Bio = styled.p`
-    
+    // why does this not work with ${({ theme }) => theme.fontFamily}
+    font-family: "Roboto", "Helvetica", sans-serif;
+    color: #baba71;
+
+    ${props =>
+        props.primary &&
+        css`
+            background: palevioletred;
+            color: #ae0000;
+        `};
 `;
 
-const TeaserText = (props) => {
+const TeaserText = ({ text }) => {
     return (
-      <Bio>{ bio }</Bio>
+      <Bio primary>{ text }</Bio>
     );
   }
   
