@@ -14,9 +14,11 @@ const Bio = styled.p`
         `};
 `;
 
-const TeaserText = ({ text }) => {
+const TeaserText = ({ mode, text }) => {
+    console.log('mode: ', mode)
+
     return (
-      <Bio primary>{ text }</Bio>
+      <Bio>{ text }</Bio>
     );
   }
   

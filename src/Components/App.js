@@ -1,4 +1,5 @@
 import TeaserText from './TeaserText';
+import Button from './Button';
 import styled, {ThemeProvider} from 'styled-components';
 import {lightTheme, darkTheme} from '../Theme/theme';
 import { GlobalStyles } from '../Theme/global';
@@ -9,7 +10,8 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      <TeaserText text={bio} />
+      <Button>Check me out</Button>
+      <TeaserText mode="primary" text={bio} />
     </ThemeProvider>
   );
 }
