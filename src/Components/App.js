@@ -1,7 +1,9 @@
+import TeaserText from './TeaserText';
+
 function App() {
   return (
     <>
-      <h1>hey there</h1>
+      <TeaserText />
     </>
   );
 }
