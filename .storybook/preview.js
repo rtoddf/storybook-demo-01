@@ -7,15 +7,15 @@ import { themes } from '@storybook/theming'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
-  docs: {
-    theme: themes.dark,
-  },
+  // docs: {
+  //   theme: themes.dark,
+  // },
 }
 
-export const decorators = [
-  (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Story />
-    </ThemeProvider>
-  ),
-];
+// export const decorators = [
+//   (Story) => (
+//     <ThemeProvider theme={darkTheme}>
+//       <Story />
+//     </ThemeProvider>
+//   ),
+// ];

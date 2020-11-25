@@ -22,7 +22,7 @@ Primary.args = {
 //primary's color is set here and passed as a prop to the component
 
 // reset the name
-Primary.storyName = 'I am the primary';
+// Primary.storyName = 'I am the primary';
 
 export const Small = Template.bind({});
 Small.args = {

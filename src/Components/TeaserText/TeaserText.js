@@ -7,7 +7,7 @@ const text = 'Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lao
 
 const TeaserText = ({ primary, backgroundColor, color, size, ...props }) => {
   return (
-    <Bio color={color} backgroundColor={ backgroundColor } size={ size }>{ text }</Bio>
+    <Bio color={ color } backgroundColor={ backgroundColor } size={ size }>{ text }</Bio>
   );
 }
 

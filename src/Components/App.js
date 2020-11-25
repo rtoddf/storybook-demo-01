@@ -10,8 +10,12 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      <Button>Check me out</Button>
-      <TeaserText text={bio} />
+      <TeaserText
+        backgroundColor="#e5e5e5"
+        color="#666"
+        onClick={() => {}}
+        size="large"
+      />
     </ThemeProvider>
   );
 }
