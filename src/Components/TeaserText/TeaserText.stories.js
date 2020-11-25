@@ -14,7 +14,7 @@ const Template = (args) => <TeaserText {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    primary: true,
+    primary: false,
     backgroundColor: '#e5e5e5',
     color: '#666',
     size: 'small'
@@ -24,9 +24,15 @@ Primary.args = {
 // reset the name
 Primary.storyName = 'I am the primary';
 
+export const Small = Template.bind({});
+Small.args = {
+    ...Primary.args,
+    size: 'small',
+};
+
 export const Large = Template.bind({});
 Large.args = {
     ...Primary.args,
-  size: 'large',
+    size: 'large',
 };
 // spreads the Primary args and uses them on Large

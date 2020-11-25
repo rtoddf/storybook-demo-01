@@ -27,11 +27,7 @@ TeaserText.propTypes = {
   /**
    * How large should the button be?
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
-  // label: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(['small', 'large']),
   /**
    * Optional click handler
    */
