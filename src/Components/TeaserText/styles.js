@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 
 const Bio = styled.p`
@@ -14,12 +13,4 @@ const Bio = styled.p`
         `};
 `;
 
-const TeaserText = ({ mode, text }) => {
-    console.log('mode: ', mode)
-
-    return (
-      <Bio>{ text }</Bio>
-    );
-  }
-  
-  export default TeaserText;
+export { Bio }

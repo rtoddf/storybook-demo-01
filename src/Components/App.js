@@ -1,4 +1,4 @@
-import TeaserText from './TeaserText';
+import TeaserText from './TeaserText/TeaserText';
 import Button from './Button';
 import styled, {ThemeProvider} from 'styled-components';
 import {lightTheme, darkTheme} from '../Theme/theme';
@@ -11,7 +11,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
       <Button>Check me out</Button>
-      <TeaserText mode="primary" text={bio} />
+      <TeaserText text={bio} />
     </ThemeProvider>
   );
 }
