@@ -5,9 +5,9 @@ import { Bio } from './styles'
 
 const text = 'Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet enim quis augue sodales, porta fringilla leo mollis. Duis ornare ac elit non feugiat. Ut id mattis mi, id efficitur nisl.'
 
-const TeaserText = ({ primary, backgroundColor, color, ...props }) => {
+const TeaserText = ({ primary, backgroundColor, color, size, ...props }) => {
   return (
-    <Bio>{ text }</Bio>
+    <Bio color={color} backgroundColor={ backgroundColor } size={ size }>{ text }</Bio>
   );
 }
 
@@ -27,7 +27,7 @@ TeaserText.propTypes = {
   /**
    * How large should the button be?
    */
-  // size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   /**
    * Button contents
    */

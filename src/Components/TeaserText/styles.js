@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 const Bio = styled.p`
     // why does this not work with ${({ theme }) => theme.fontFamily}
     font-family: "Roboto", "Helvetica", sans-serif;
-    color: #baba71;
+    background-color: ${(props) => props.backgroundColor};
+    color: ${(props) => props.color};
+    padding: ${(props) => props.size === 'large' ? '70px' : '10px'}
 
     ${props =>
         props.primary &&
