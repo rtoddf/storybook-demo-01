@@ -23,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     margin: 0;
     padding: 0;
-    font-family: ${({ theme }) => theme.fontFamily};
+    font-family: "Roboto", "Helvetica", sans-serif;
     transition: all 1s linear;
   }
 

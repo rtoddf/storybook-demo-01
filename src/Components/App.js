@@ -1,3 +1,4 @@
+import Card from './Card/Card';
 import TeaserText from './TeaserText/TeaserText';
 import Button from './Button';
 import styled, {ThemeProvider} from 'styled-components';
@@ -10,12 +11,13 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      <TeaserText
+      <Card />
+      {/* <TeaserText
         backgroundColor="#e5e5e5"
         color="#666"
         onClick={() => {}}
         size="large"
-      />
+      /> */}
     </ThemeProvider>
   );
 }

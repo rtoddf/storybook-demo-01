@@ -2,7 +2,7 @@ import React from 'react';
 import TeaserText from './TeaserText';
 
 export default {
-    title: 'Componenets/TeaserText',
+    title: 'Components/TeaserText',
     component: TeaserText,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -14,7 +14,7 @@ const Template = (args) => <TeaserText {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    primary: false,
+    primary: true,
     backgroundColor: '#e5e5e5',
     color: '#666',
     size: 'small'
