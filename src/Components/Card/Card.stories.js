@@ -1,4 +1,5 @@
 import React from 'react';
+import { withDesign } from 'storybook-addon-designs'
 import Card from './Card';
 
 export default {
@@ -8,6 +9,7 @@ export default {
         backgroundColor: { control: 'color' },
         color: { control: 'color' }
     },
+    decorators: [withDesign],
 };
 
 const Template = (args) => <Card {...args} />;
@@ -20,4 +22,11 @@ Primary.args = {
     color: '#e5e5e5',
     fontFamily: 'Roboto, Helvetica, sans-serif'
     // size: 'small'
+}
+
+Primary.parameters = {
+    design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/IvOpGuz5Vb5xA79821vB4H/UXUI-Process?node-id=67%3A156',
+    },
 }

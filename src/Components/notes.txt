@@ -34,3 +34,4 @@ Publishing a storybook to web - could be internal in an s3 bucket
 
 
 using storybookjs with figma
+https://github.com/pocka/storybook-addon-designs/blob/master/README.md
