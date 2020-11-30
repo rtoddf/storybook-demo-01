@@ -1,10 +1,10 @@
 import { addons } from '@storybook/addons';
 import { themes } from '@storybook/theming';
 
-import yourTheme from './yourTheme';
+import toddTheme from './ToddTheme';
 
-// addons.setConfig({
-//     theme: yourTheme,
-// });
+addons.setConfig({
+    theme: toddTheme,
+});
 
 // https://storybook.js.org/docs/react/configure/theming
