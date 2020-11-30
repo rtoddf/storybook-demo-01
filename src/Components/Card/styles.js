@@ -12,7 +12,7 @@ const CardOutline = styled.div`
     box-shadow: 4px 4px 10px rgba(0,0,0,1), -4px -4px 18px rgba(58, 58, 58, 1);
 
     font-family: ${(props) => props.fontFamily};
-    font-size: ${(props) => props.fontSize === 'normal' ? '16px' : '12px'};
+    font-size: ${(props) => props.fontSize};
     text-align: center;
 `;
 

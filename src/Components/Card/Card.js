@@ -26,11 +26,11 @@ Card.propTypes = {
   /**
    * What font family  to use
    */
-  fontFamily: PropTypes.oneOf(['Roboto, Helvetica, sans-serif', 'Open Sans, sans-serif']),
+  fontFamily: PropTypes.oneOf(['Roboto, Helvetica, sans-serif', 'Open Sans, sans-serif', 'Times New Roman, Times, serif', 'Arial, Helvetica, sans-serif', 'Lucida Console, Courier, monospace']),
   /**
    * How large should the font be?
    */
-  fontSize: PropTypes.oneOf(['normal', 'small']),
+  fontSize: PropTypes.oneOf(['12px', '16px', '22px', '32px']),
   /**
    * Optional click handler
    */
@@ -41,7 +41,7 @@ Card.defaultProps = {
   backgroundColor: null,
   color: null,
   fontFamily: 'Roboto, Helvetica, sans-serif',
-  fontSize: 'normal',
+  fontSize: '16px',
   // primary: false,
   onClick: undefined,
 };
