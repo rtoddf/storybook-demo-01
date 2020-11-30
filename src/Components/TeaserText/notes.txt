@@ -1,0 +1,36 @@
+
+Starting a new react project with create-react-app
+Using hooks - useState and useAxios
+Creating styled components
+Creating Global styles
+Toggling between modes - light/dark, layout types, accessibility, etc
+
+References:
+Create-react-app - https://create-react-app.dev/
+npx create-react-app my-app
+
+Neumorphism - https://uxdesign.cc/neumorphism-in-adobe-xd-8f5347d84737
+
+Design Systems -> ATOM Design Methodology (Brad Frost) -> Figma -> StorybookJS -> self-contained components
+https://atomicdesign.bradfrost.com/
+
+useAxios - https://medium.com/better-programming/the-modern-way-to-use-promise-based-http-requests-axios-hooks-f00791345a37
+npm install axios axios-hooks
+
+Styled-components - https://styled-components.com/
+npm install --save styled-components
+
+Creating a toggle
+https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
+
+How to use Figma - 10 minutes
+Setting up a storybook
+Relation between the component, story, and styles (styled-components)
+
+
+Use theme provider and use customization - should be flexible enough
+Publishing a storybook to web - could be internal in an s3 bucket
+
+
+
+using storybookjs with figma
