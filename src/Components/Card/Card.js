@@ -4,9 +4,9 @@ import { CardOutline } from './styles';
 
 const text = 'Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet enim quis augue sodales, porta fringilla leo mollis. Duis ornare ac elit non feugiat. Ut id mattis mi, id efficitur nisl.'
 
-const Card = ({ backgroundColor, color, fontFamily, ...props }) => {
+const Card = ({ backgroundColor, color, fontFamily, fontSize, ...props }) => {
   return (
-    <CardOutline color={ color } backgroundColor={ backgroundColor } fontFamily={fontFamily}>{text}</CardOutline>
+    <CardOutline color={ color } backgroundColor={ backgroundColor } fontFamily={fontFamily} fontSize={fontSize}>{text}</CardOutline>
   );
 }
 
@@ -26,11 +26,11 @@ Card.propTypes = {
   /**
    * What font family  to use
    */
-  fontFamily: PropTypes.string,
+  fontFamily: PropTypes.oneOf(['Roboto, Helvetica, sans-serif', 'Open Sans, sans-serif']),
   /**
-   * How large should the button be?
+   * How large should the font be?
    */
-//   size: PropTypes.oneOf(['small', 'large']),
+  fontSize: PropTypes.oneOf(['normal', 'small']),
   /**
    * Optional click handler
    */
@@ -40,8 +40,9 @@ Card.propTypes = {
 Card.defaultProps = {
   backgroundColor: null,
   color: null,
-  fontFamily: null,
-  primary: false,
+  fontFamily: 'Roboto, Helvetica, sans-serif',
+  fontSize: 'normal',
+  // primary: false,
   onClick: undefined,
 };
   

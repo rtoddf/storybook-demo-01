@@ -1,20 +1,42 @@
 import styled, { css } from 'styled-components';
 
 const CardOutline = styled.div`
-    width: 300px;
-    height: 560px;
-    margin: 20px auto;
-    border-radius: 20px;
-    text-align: center;
+    margin: 20px;
+    padding: 20px;
 
     background-color: ${(props) => props.backgroundColor};
-    // can you get this from global??
-    font-family: ${(props) => props.fontFamily};
-
     color: ${(props) => props.color};
-    padding: ${(props) => props.size === 'large' ? '70px' : '20px'};
-    font-size: ${(props) => props.size === 'large' ? '70px' : '16px'};
+
+    // this is pulling from the theme.js file
+    border-radius: ${(props) => props.theme.borderRadius};
     box-shadow: 4px 4px 10px rgba(0,0,0,1), -4px -4px 18px rgba(58, 58, 58, 1);
+
+    font-family: ${(props) => props.fontFamily};
+    font-size: ${(props) => props.fontSize === 'normal' ? '16px' : '12px'};
+    text-align: center;
 `;
 
 export { CardOutline }
+
+
+// width: 300px;
+    // height: 560px;
+// can you get this from global??
+
+// padding: ${(props) => props.size === 'large' ? '70px' : '20px'};
+
+// const CardOutline = styled.div(({ theme, ...props }) => ({
+//     margin: '20px',
+//     padding: '20px',
+
+//     backgroundColor: `${(props) => props.backgroundColor}`,
+//     color: `${(props) => props.color}`,
+    
+//     // border-radius: 20px;
+//     borderRadius: `${(props) => props.theme.borderRadius}`,
+//     boxShadow: `4px 4px 10px rgba(0,0,0,1), -4px -4px 18px rgba(58, 58, 58, 1)`,
+
+//     fontFamily: `${(props) => props.fontFamily}`,
+//     fontSize: `${(props) => props.fontSize === 'normal' ? '16px' : '12px'}`,
+//     textAlign: 'center',
+// }))

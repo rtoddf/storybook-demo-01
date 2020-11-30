@@ -20,8 +20,8 @@ Primary.args = {
     // primary: true,
     backgroundColor: '#1a1a1a',
     color: '#e5e5e5',
-    fontFamily: 'Roboto, Helvetica, sans-serif'
-    // size: 'small'
+    fontFamily: 'Roboto, Helvetica, sans-serif',
+    fontSize: '16px'
 }
 
 Primary.parameters = {
