@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CardOutline } from './styles';
 
-const text = 'Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet enim quis augue sodales, porta fringilla leo mollis. Duis ornare ac elit non feugiat. Ut id mattis mi, id efficitur nisl.'
+const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ligula vitae mattis imperdiet. Proin feugiat vel risus lacinia tincidunt. Morbi malesuada blandit ante vel consequat. In hac habitasse platea dictumst. Ut pretium finibus erat, vitae posuere erat suscipit ut. Maecenas at enim at lorem ornare dignissim. Aliquam interdum tincidunt faucibus. Morbi eu diam maximus, elementum turpis nec, efficitur ligula. Sed et maximus massa.'
 
-const Card = ({ backgroundColor, color, fontFamily, fontSize, ...props }) => {
+const Card = ({ backgroundColor, color, fontFamily, fontSize, boxShadow, textAlign, ...props }) => {
   return (
-    <CardOutline color={ color } backgroundColor={ backgroundColor } fontFamily={fontFamily} fontSize={fontSize}>{text}</CardOutline>
+    <CardOutline color={ color } backgroundColor={ backgroundColor } fontFamily={fontFamily} fontSize={fontSize} boxShadow={boxShadow} textAlign={textAlign}>{text}</CardOutline>
   );
 }
 
@@ -23,6 +23,10 @@ Card.propTypes = {
    * What text color to use
    */
   color: PropTypes.string,
+    /**
+   * What box-shadow settings to use
+   */
+  boxShadow: PropTypes.string,
   /**
    * What font family  to use
    */
@@ -32,6 +36,10 @@ Card.propTypes = {
    */
   fontSize: PropTypes.oneOf(['12px', '16px', '22px', '32px']),
   /**
+   * Text Alignment
+   */
+  textAlign: PropTypes.oneOf(['left, cecnter, right']),
+  /**
    * Optional click handler
    */
   onClick: PropTypes.func,
@@ -40,9 +48,10 @@ Card.propTypes = {
 Card.defaultProps = {
   backgroundColor: null,
   color: null,
+  boxShadow: false,
   fontFamily: 'Roboto, Helvetica, sans-serif',
   fontSize: '16px',
-  // primary: false,
+  textAlign: null,
   onClick: undefined,
 };
   

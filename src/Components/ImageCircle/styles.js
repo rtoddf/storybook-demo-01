@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const CardOutline = styled.div`
+const ImageCircleOutline = styled.div`
     margin: 20px;
     padding: 20px;
 
@@ -16,7 +16,23 @@ const CardOutline = styled.div`
     text-align: ${(props) => props.textAlign};
 `;
 
-export { CardOutline }
+const ImageContainer = styled.div`
+  margin: 25px auto;
+  height: 180px;
+  width: 180px;
+  border-radius: ${props => props.theme.borderRadiusCircle};
+  box-shadow: ${(props) => props.boxShadow};
+`;
+
+const Image = styled.img`
+  width: 180px;
+  height: 180px;
+  object-fit:cover;
+  border: 4px solid ${(props) => props.borderColor};
+  border-radius: ${props => props.theme.borderRadiusCircle};
+`;
+
+export { ImageContainer, Image }
 
 
 // width: 300px;
