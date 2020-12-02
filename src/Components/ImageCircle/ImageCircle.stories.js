@@ -9,6 +9,16 @@ export default {
         borderColor: { 
             control: 'color'
         },
+        borderThickness: {
+            control: {
+                type: 'select',
+                options: [
+                    '1px', 
+                    '3px', 
+                    '5px'
+                ],
+            },
+        }
     },
     decorators: [withDesign],
 };
@@ -20,11 +30,13 @@ export const Light = Template.bind({});
 Dark.args = {
     borderColor: '#585858',
     boxShadow: '6px 6px 18px rgba(0,0,0,1), -6px -6px 18px rgba(58, 58, 58, 1)',
+    borderThickness: '5px',
 }
 
 Light.args = {
     borderColor: '#e5e5e5',
     boxShadow: '6px 6px 18px rgba(0,0,0,.25), -6px -6px 18px rgba(255, 255, 255, 1)',
+    borderThickness: '5px',
 }
 
 // design links

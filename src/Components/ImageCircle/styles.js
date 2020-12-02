@@ -28,7 +28,7 @@ const Image = styled.img`
   width: 180px;
   height: 180px;
   object-fit:cover;
-  border: 4px solid ${(props) => props.borderColor};
+  border: ${(props) => props.borderThickness} solid ${(props) => props.borderColor};
   border-radius: ${props => props.theme.borderRadiusCircle};
 `;
 
