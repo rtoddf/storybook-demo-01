@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const CardOutline = styled.div`
     margin: 20px;
-    padding: 20px;
+    padding: ${(props) => props.padding};
 
     background-color: ${(props) => props.backgroundColor};
     color: ${(props) => props.color};

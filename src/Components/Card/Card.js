@@ -4,9 +4,9 @@ import { CardOutline } from './styles';
 
 const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ligula vitae mattis imperdiet. Proin feugiat vel risus lacinia tincidunt. Morbi malesuada blandit ante vel consequat. In hac habitasse platea dictumst. Ut pretium finibus erat, vitae posuere erat suscipit ut. Maecenas at enim at lorem ornare dignissim. Aliquam interdum tincidunt faucibus. Morbi eu diam maximus, elementum turpis nec, efficitur ligula. Sed et maximus massa.'
 
-const Card = ({ backgroundColor, color, fontFamily, fontSize, boxShadow, textAlign, ...props }) => {
+const Card = ({ backgroundColor, color, fontFamily, fontSize, boxShadow, textAlign, padding, ...props }) => {
   return (
-    <CardOutline color={ color } backgroundColor={ backgroundColor } fontFamily={fontFamily} fontSize={fontSize} boxShadow={boxShadow} textAlign={textAlign}>{text}</CardOutline>
+    <CardOutline color={ color } backgroundColor={ backgroundColor } fontFamily={fontFamily} fontSize={fontSize} boxShadow={boxShadow} textAlign={textAlign} padding={padding}>{text}</CardOutline>
   );
 }
 
@@ -14,7 +14,7 @@ Card.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
-//   primary: PropTypes.bool,
+  padding: PropTypes.oneOf(['20px', '40px', '60px']),
   /**
    * What background color to use
    */
@@ -46,6 +46,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
+  padding: null,
   backgroundColor: null,
   color: null,
   boxShadow: false,

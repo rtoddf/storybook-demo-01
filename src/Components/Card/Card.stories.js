@@ -12,6 +12,16 @@ export default {
         color: { 
             control: 'color'
         },
+        padding: {
+            control: {
+                type: 'select',
+                options: [
+                    '20px', 
+                    '40px', 
+                    '60px'
+                ],
+            },
+        },
         textAlign: {
             control: {
                 type: 'select',
@@ -32,6 +42,7 @@ export const Light = Template.bind({});
 
 Dark.args = {
     // primary: true,
+    padding: '20px',
     backgroundColor: '#1a1a1a',
     color: '#e5e5e5',
     boxShadow: '6px 6px 18px rgba(0,0,0,1), -6px -6px 18px rgba(58, 58, 58, 1)',
@@ -42,6 +53,7 @@ Dark.args = {
 
 Light.args = {
     // primary: true,
+    padding: '20px',
     backgroundColor: '#e5e5e5',
     color: '#666666',
     boxShadow: '6px 6px 18px rgba(0,0,0,.25), -6px -6px 18px rgba(255, 255, 255, 1)',
