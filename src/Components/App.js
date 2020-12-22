@@ -11,13 +11,14 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
       <Card
-        backgroundColor="rgba(106,106,106,1)"
-        boxShadow="6px 6px 18px rgba(0,0,0,1), -6px -6px 18px rgba(255, 58, 58, 1)"
+        backgroundColor="#1a1a1a"
+        boxShadow="6px 6px 18px rgba(0,0,0,1), -16px -16px 18px rgba(58, 58, 58, 1)"
         color="#e5e5e5"
-        fontFamily="Lucida Console, Courier, monospace"
+        fontFamily="Arial, Helvetica, sans-serif"
         fontSize="22px"
         onClick={() => {}}
-        textAlign="center"
+        padding="40px"
+        textAlign="right"
       />
       
       <ImageCircle />
